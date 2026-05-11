@@ -81,7 +81,7 @@ It explores:
 
 stock_price_prediction/
 │
-├── data/
+├── files/
 │   ├── AAPL.csv
 │   ├── TSLA.csv
 │   ├── GOOGL.csv
