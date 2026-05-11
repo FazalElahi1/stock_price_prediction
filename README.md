@@ -1,55 +1,76 @@
-# 📈 Stock Price Prediction
+# 📈 Stock Price Analysis & Financial Indicators Project
 
-An end-to-end **Machine Learning project** that predicts stock prices using historical market data. The project applies data preprocessing, exploratory data analysis (EDA), and predictive modeling techniques to forecast stock trends.
+A comprehensive **Exploratory Data Analysis (EDA) project** on historical stock prices of major companies using Python.  
+This project analyzes **price trends, volatility, technical indicators, correlations, and market behavior** across multiple stocks.
 
 ---
 
 ## 🚀 Project Overview
 
-This project focuses on analyzing stock market data and building a predictive model to estimate future stock prices. It demonstrates a complete **data science workflow** including:
+This project performs deep financial data analysis on multiple companies including:
 
-- Data cleaning and preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Model training and evaluation
-- Prediction visualization
+- 🍎 AAPL (Apple)
+- 🚗 TSLA (Tesla)
+- 🔍 GOOGL (Google)
+- 💻 MSFT (Microsoft)
+- 📦 AMZN (Amazon)
+- 🏦 GS, JPM (Financial sector)
+- 📊 IBM, GE, FB
 
----
-
-## 📊 Dataset
-
-The dataset contains historical stock price data including:
-
-- 📅 Date
-- 📈 Open price
-- 📉 Close price
-- 🔼 High price
-- 🔽 Low price
-- 📦 Volume
+It explores:
+- Price movements
+- Returns & volatility
+- Technical indicators (RSI, MACD, ADX, CCI, ROC)
+- Market correlation (S&P500, DJIA, QQQ)
+- Trading volume behavior
+- Trend analysis & momentum
 
 ---
 
-## 🧠 Machine Learning Approach
+## 📊 Key Features
 
-The project uses supervised learning techniques to predict stock prices based on historical trends.
+### 📌 1. Descriptive Analysis
+- Average closing prices
+- Maximum stock prices
+- Trading days per company
 
-Typical workflow:
+### 📌 2. Return Analysis
+- Daily returns calculation
+- Positive return frequency
+- Stability comparison (standard deviation)
 
-1. Load and clean dataset
-2. Perform EDA (visualization & insights)
-3. Feature selection
-4. Train regression model
-5. Evaluate performance
-6. Predict future prices
+### 📌 3. Volatility Analysis
+- Rolling volatility (20-day SD)
+- High volatility detection
+- Volatility trend comparison
+
+### 📌 4. Technical Indicators
+- RSI (Relative Strength Index)
+- MACD signals
+- ADX (Trend strength)
+- CCI (Commodity Channel Index)
+- ROC (Rate of Change)
+
+### 📌 5. Market Behavior
+- Correlation between companies
+- Correlation with indices:
+  - S&P 500
+  - Dow Jones (DJIA)
+  - NASDAQ (QQQ)
+
+### 📌 6. Advanced Financial Insights
+- Sharpe Ratio (risk-adjusted returns)
+- Golden Cross detection (MA50 vs MA200)
+- Recovery time after drawdowns
+- Momentum persistence
 
 ---
 
-## 🏗️ Tech Stack
+## 🧠 Technologies Used
 
 - 🐍 Python
 - 📊 Pandas, NumPy
 - 📉 Matplotlib, Seaborn
-- 🤖 Scikit-learn
 - 📓 Jupyter Notebook
 
 ---
@@ -60,35 +81,24 @@ Typical workflow:
 
 stock_price_prediction/
 │
-├── files/                  # Dataset files
-├── business.ipynb       # Main notebook
-├── requirements.txt     # Dependencies
-└── README.md            # Project documentation
+├── data/
+│   ├── AAPL.csv
+│   ├── TSLA.csv
+│   ├── GOOGL.csv
+│   └── ...
+│
+├── business.ipynb        # Main analysis notebook
+├── README.md
+└── requirements.txt
 
 ````
 
 ---
 
-## 📊 Workflow Diagram
+## ▶️ How to Run This Project
 
-```
-Raw Data → Cleaning → EDA → Feature Engineering → Model Training → Prediction
-```
-
----
-
-## 📈 Results
-
-- Built a regression model for stock prediction
-- Visualized stock trends and patterns
-- Achieved meaningful prediction accuracy (update with your score if available)
-
----
-
-## ▶️ How to Run
-
-### 1️⃣ Clone repository
-```bash id="run1"
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/FazalElahi1/stock_price_prediction.git
 cd stock_price_prediction
 ````
@@ -97,45 +107,59 @@ cd stock_price_prediction
 
 ### 2️⃣ Install dependencies
 
-```bash id="run2"
-pip install -r requirements.txt
+```bash
+pip install pandas numpy matplotlib seaborn
 ```
 
 ---
 
 ### 3️⃣ Run notebook
 
-```bash id="run3"
+```bash
 jupyter notebook business.ipynb
 ```
 
 ---
 
-## 📌 Key Insights
+## 📊 Sample Insights
 
-* Stock prices show strong time-based patterns
-* Volume impacts short-term price movement
-* Moving averages help smooth volatility
+* 📈 Tech stocks show stronger long-term upward trends than financial stocks
+* ⚡ TSLA shows highest volatility among all companies
+* 📊 MSFT and AAPL show strong correlation in price movement
+* 📉 Volume has weak-to-moderate correlation with volatility
+* 🧠 RSI and returns show weak predictive relationship overall market-wise
+
+---
+
+## 📌 Key Visualizations
+
+* Stock price trends over time
+* Moving averages (7-day, 30-day, 200-day)
+* Correlation heatmaps
+* Volume vs volatility analysis
+* RSI vs Returns comparison
+* MACD signal analysis
+* Market index correlation
+
+---
+
+## 📈 Project Highlights
+
+✔ Multi-stock comparison
+✔ Technical indicator analysis
+✔ Risk & return evaluation
+✔ Market correlation study
+✔ Advanced financial metrics
 
 ---
 
 ## 🚀 Future Improvements
 
-* 🔥 Use LSTM / Deep Learning models
-* 📡 Add real-time stock API integration
-* 📊 Improve feature engineering
-* 🌐 Build web dashboard (Streamlit / Flask)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repo
-2. Create a new branch
-3. Make changes
-4. Submit a pull request
+* 🔥 Add LSTM / Deep Learning price prediction
+* 🌐 Real-time stock API integration (Yahoo Finance / Alpha Vantage)
+* 📊 Interactive dashboard (Streamlit / Plotly Dash)
+* 📱 Web-based financial analytics tool
+* ⚡ Portfolio optimization module
 
 ---
 
@@ -147,3 +171,18 @@ Contributions are welcome!
 
 ---
 
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork it
+* 🚀 Share it
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+```
