@@ -1,8 +1,3 @@
-Here’s a **professional GitHub README.md** for your repository:
-
----
-
-```markdown id="readme1"
 # 📈 Stock Price Prediction
 
 An end-to-end **Machine Learning project** that predicts stock prices using historical market data. The project applies data preprocessing, exploratory data analysis (EDA), and predictive modeling techniques to forecast stock trends.
